@@ -264,8 +264,9 @@ nav .toplogoW {
 
 .aboutHead{
     color: var(--primary);
-    grid-area: 1 / 1 / span 1 / span 5;
-    padding: 0% 0% 5% 0;
+    grid-area: 1 / 1 / span 1 / span 12;
+    padding: 0% 0% 3rem 0;
+    margin-top: 3rem;
 }
 .par-1{
     grid-area: 2 / 1 / span 1 / span 5;
@@ -276,7 +277,7 @@ nav .toplogoW {
     padding: 0% 0% 5% 0;
 }
 .CWphoto{
-    grid-area: 1 / 7 / span 4 / span 6;
+    grid-area: 2 / 8 / span 3 / span 5;
     padding: 0% 0% 5% 0;
 }
 .resume-button{
@@ -306,7 +307,7 @@ nav .toplogoW {
 
 .skills1p{
     grid-area: 2 / 1 / span 1 / span 4;
-    /* padding: 0 0 0 1rem; */
+    padding: 0 1rem 0 0;
 }
 .skills2{
     grid-area: 1 / 5 / span 1 / span 4;
@@ -315,7 +316,7 @@ nav .toplogoW {
 }
 .skills2p{
     grid-area: 2 / 5 / span 1 / span 4;
-    /* padding: 0 0.5rem 0 0; */
+    padding: 0 0.5rem 0 1rem;
 }
 .skills3{
     grid-area: 1 / 9 / span 1 / span 4;
@@ -324,7 +325,7 @@ nav .toplogoW {
 }
 .skills3p{
     grid-area: 2 / 9 / span 1 / span 4;
-    padding: 0 0.5rem;
+    padding: 0 0 0 0.5rem;
 }
 .tools{
     margin: 2rem 5% 5rem 5%;
@@ -375,4 +376,209 @@ footer .link {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* media queries */
+@media only screen and (max-width: 720px) and (min-device-width:320px) {
+
+    
+    h1 {
+        font-size: 2.2rem; 
+ 
+     }
+ 
+     h2 {
+         font-size: 2rem;
+     }
+ 
+     h3 {
+         font-size: 1.1rem;
+     }
+ 
+     h4 {
+         font-size: 2.2rem;
+     }
+ 
+     h5 {
+         font-size: 1.5rem;
+     }
+     
+     p {
+         font-size: 1.1rem;
+     }
+    .main-grid {
+        grid-template-columns: repeat(4,1fr);
+        padding: 4% 4%; 
+    } 
+
+    .panel-grid {
+        grid-template-columns: repeat(4,1fr);
+        padding: 4% 4%; 
+    } 
+    .aboutHead{
+        grid-area: 1 / 1 / span 1 / span 4;
+        padding: 1rem 0 1rem 0;
+        margin-top: 0;
+
+    }
+    .CWphoto{
+        grid-area: 2 / 1 / span 1 / span 4;
+        margin: 0.5rem 1.5rem;
+    }
+    .par-1{
+        grid-area: 3 / 1 / span 1 / span 4;
+        /* padding-right: 1rem; */
+    
+    }
+    .par-2{
+        grid-area: 4 / 1 / span 1 / span 4;
+
+    }
+    .resume-button{
+        grid-area: 5 / 1 / span 1 / span 3;
+        padding: 5% 0% 5% 0;
+    }
+
+    .subhead{
+        padding: 0.5rem;
+    }
+        
+    .skills1p{
+        padding: 0.5rem;
+    }
+    .skills2{
+        grid-area: 3 / 1 / span 1 / span 4;
+        padding: 0.5rem;
+        
+    }
+    .skills2p{
+        grid-area: 4 / 1 / span 1 / span 4;
+        padding: 0.5rem;
+    }
+    .skills3{
+        grid-area: 5 / 1 / span 1 / span 4;
+        padding: 0.5rem;
+        
+    }
+    .skills3p{
+        grid-area: 6 / 1 / span 1 / span 4;
+        padding: 0.5rem;
+    }
+
+    nav {
+        height: 72px;
+    }
+    
+    #burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }    
+
+    .toplogoC {
+    display: none;
+    }
+    .toplogoW {
+        display: none;
+    }
+    .logo-mobileC{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .logo-mobileW{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+.button-nav{
+        display: none;
+    }  
+    
+
+
+}
+
+@media only screen and (min-device-width:721px) and (max-device-width: 1200px) {
+
+    h1 {
+        font-size: 2.2rem; 
+    }
+     
+    h2 {
+     font-size: 2rem;
+    }
+     
+    h3 {
+     font-size: 1.1rem;
+    }
+     
+    h4 {
+        font-size: 2.2rem;
+    }
+     
+    h5 {
+        font-size: 1.6rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    nav {
+        height: 72px;
+    }
+    
+    .main-grid {
+        grid-template-columns: repeat(4,1fr);
+        padding: 4% 4%; 
+    }
+ 
+    .aboutHead{
+        grid-area: 1 / 1 / span 1 / span 4;
+        padding: 0.5rem 0 0.5rem 0;
+        margin-top: 0;
+
+    }
+    .par-1{
+        grid-area: 2 / 1 / span 1 / span 2;
+        padding-right: 0.5rem;
+    
+    }
+
+    .CWphoto{
+        grid-area: 2 / 3/ span 1 / span 2;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        }
+
+    .par-2{
+        grid-area: 3 / 1 / span 1 / span 4;
+
+    }
+    .resume-button{
+        grid-area: 4 / 1 / span 1 / span 2;
+     }
+     
+     .skills1p,
+     .skills2p,
+     .skills3p{
+        font-size: 1.1rem;
+        padding: 0;
+    }
+    .skills1{
+        padding: 0 1rem 0 0;
+    }   
+    
+    .skills2{
+        padding: 0 1rem 0 1rem;
+        
+    }
+    
+    .skills3{
+        padding: 0 0 0 1rem;
+        
+    }
+    
+   
 }
