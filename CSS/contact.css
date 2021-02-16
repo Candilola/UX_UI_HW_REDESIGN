@@ -242,33 +242,37 @@ nav .toplogoW {
 
 .hero-section{
     background-color: var(--primary);
-    background-image: url("../images/Group\ 13.png");
+    /* background-image: url("../images/Group\ 13.png"); */
     background-position: right;
     background-repeat: no-repeat;
     background-size: 50vw;
-    min-height: 500px;
+    min-height: 350px;
     max-height: 97vh;
 }
 .header-title {
-    grid-area: 2 / 1 / span 1 / span 6;
-    padding: 30% 0% 0% 0;
+    grid-area: 1 / 1 / span 1 / span 12;
+    padding: 5rem 0% 0% 0;
+    color: var(--secondary);
+    text-align: center;
 }
 /* .header-image{
     grid-area: 1 / 7 / span 6 / span 12;
     padding: 0% 0% 0% 0;
 } */
-.header-subhead{
-    color: white;
-    grid-area: 3 / 1 / span 1 / span 6;
+/* .header-subhead{
+    color: var(--secondary);
+    grid-area: 2 / 1 / span 1 / span 12;
     padding: 0% 0% 0% 0;
-}
+} */
 .header-standfirst{
-    grid-area: 4 / 1 / span 1 / span 6;
+    grid-area: 2 / 1 / span 1 / span 12;
     padding: 0% 0% 5% 0;
+    text-align: center;
 }
 .header-button{
-    grid-area: 5 / 1 / span 1 / span 2;
+    grid-area: 3 / 6 / span 1 / span 2;
     padding: 1% 4% 1% 4%;
+    max-height: 3rem;
     
 }
 
@@ -278,101 +282,17 @@ nav .toplogoW {
 }
 
 
-/* case studies */
-.work{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.cs-box1 {
-    padding: 1.5rem;
-    min-height: 500px;
-    margin: 0 0 5% 0;
-
-}
-.cs-box2 {
-    padding: 1.5rem;
-    min-height: 500px;
-    margin: 0 0 5% 0;
-
-}
-.cs-box3 {
-    padding: 1.5rem;
-    min-height: 500px;
-    margin: 0 0 5% 0;
-
-}
-
-.CS-pic1:hover {
-    transform: scale(1.05);
-}
-.CS-pic2:hover {
-    transform: scale(1.05);
-}
-.CS-pic3:hover {
-    transform: scale(1.05);
-}
-
-.CS-pic1 {
-    grid-area: 1 / 1 / span 6 / span 6;
-    /* padding: 0% 0% 5% 0; */
-    background: url("../images/StoryDogs.png") no-repeat;
-    background-size: contain;
-}
-.CS-pic2 {
-    grid-area: 1 / 7 / span 6 / span 6;
-    /* padding: 0% 0% 5% 0; */
-    background: url("../images/Tinder.png") no-repeat;
-    background-size: contain;
-}
-.CS-pic3 {
-    grid-area: 1 / 1 / span 6 / span 6;
-    /* padding: 0% 0% 5% 0; */
-    background: url("../images/CER.png") no-repeat;
-    background-size: contain;
-}
-.CS-right {
-    grid-area: 2 / 8 / span 4 / span 6;
-    padding: 0% 2% 5% 2%;
-    padding-left: 32px;
-    display: flex;
-    flex-flow: column;
-    position: relative;
-}
-.CS-left {
-    grid-area: 2 / 1 / span 4 / span 6;
-    padding: 0% 2% 5% 2%;    
-    padding-right: 32px;
-    display: flex;
-    flex-flow: column;
-    position: relative;
-}
-.cs-btn{
-    
-    margin-left: 10%;
-    margin-right: 10%;
-    
-}
-.cs-tag{
-    padding-top: 50px;
-    padding-bottom: 10px;
-    font-weight: 700;
-}
-.cs-head{
-    padding-bottom: 10px
-}
-
-.content>* {
-    margin-bottom: 1rem;
-    text-align: center;
-}
 /* footer */
 footer {
     width: 100%;
     height: auto;
-    position: bottom;
+    position: fixed;
+    left: 0;
     bottom: 0;
+    width: 100%;
     background: black;
     padding-top: 20px;
+    
 }
 .footlogoC {
     color: white;
@@ -411,231 +331,73 @@ footer .link {
 }
 
 
-
-
 /* media queries */
 @media only screen and (max-width: 720px) and (min-device-width:320px) {
 
-    .main-grid {
-        grid-template-columns: repeat(4,1fr);
-        padding: 4% 4%; 
-    }   
 
-    .hero-section{
-        background-image: none;
-    }
-
-    .header-title{
-        grid-area: 1 / 1 / span 1 / span 4;
-        padding: 10% 0% 0 0;
-    }
-    .header-subhead{
-        grid-area: 2 / 1 / span 1 / span 4;
-        padding: 0% 0% 3% 0;
-    }
-    .header-standfirst{
-        grid-area: 3 / 1 / span 1 / span 4;
-        padding: 0% 0% 5% 0;
-    }
-    .header-button{
-        grid-area: 4 / 1 / span 1 / span 3;
-        padding: 3px 8px 3px 8px;
-        margin-right: 10%;
-        margin-bottom: 20px;
-    }
-    
-   
     #burger-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }    
-
-    .toplogoC {
-    display: none;
-    }
-    .toplogoW {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }    
+    
+        .toplogoC {
         display: none;
-    }
-    .logo-mobileC{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    .logo-mobileW{
+        }
+        .toplogoW {
+            display: none;
+        }
+        .logo-mobileC{
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         }
-.button-nav{
-        display: none;
-    }  
-    
-.work{
-     margin-left: 3%;
-    margin-right: 3%;
-    }
-
-
-.cs-box1,
-.cs-box2,
-.cs-box3{
-    padding: 0.5rem;
-    margin: 2%;
-       
-   }
-.CS-pic1 {
-    grid-area: 1 / 1 / span 4 / span 4;
-    padding: 0;
-    background-size: contain;
-    min-height: 15rem;
-
-}
-.CS-pic2 {
-    grid-area: 1 / 1 / span 4 / span 4;
-    padding: 0;
-    background-size: contain;
-    min-height: 15rem;
-}
-.CS-pic3 {
-    grid-area: 1 / 1 / span 4 / span 4;
-    padding: 0;
-    background-size: contain;
-    min-height: 15rem;
-}
-
-.CS-right{
-    grid-area: 5 / 1 / span 1 / span 4;
-    padding: 0;
-    padding-right: 0;
-
-
-}
-.CS-left{
-    grid-area: 5 / 1 / span 1 / span 4;
-    padding: 0;
-    padding-left: 0;
-
-
-}
-.cs-btn{
-    
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 2rem;
-    
-}
-.cs-head{
-    font-size: 2.5rem !important;
-}
-
-    h1 {
-        font-size: 3rem; 
- 
-     }
- 
-     h2 {
-         font-size: 2rem;
-     }
- 
-     h3 {
-         font-size: 1.2rem;
-     }
- 
-     h4 {
-         font-size: 2.2rem;
-     }
- 
-     h5 {
-         font-size: 1.5rem;
-     }
-     p{
-        font-size: 1.2rem;
-     }
-}
-
-@media only screen and (min-device-width:721px) and (max-device-width: 1200px) {
-
-    .cs-box1,
-    .cs-box2,
-    .cs-box3{
-        margin: 2%;  
-       }
-
-    .CS-pic1 {
-        grid-area: 1 / 1 / span 1 / span 4;
-        padding: 0;
-        background-size: contain;
-    min-height: 25rem;
-    
-    }
-    .CS-pic2 {
-        grid-area: 1 / 1 / span 1 / span 4;
-        padding: 0;
-        background-size: contain;
-        min-height: 25rem;
-    }
-    .CS-pic3 {
-        grid-area: 1 / 1 / span 1 / span 4;
-        padding: 0;
-        background-size: contain;
-        min-height: 25rem;
-    }
-    
-    .header-title{
-        grid-area: 1 / 1 / span 1 / span 2;
-
-    }
-    .header-subhead{
-        grid-area: 2 / 1 / span 1 / span 2;
-
-    }
-    .header-standfirst{
-        grid-area: 3 / 1 / span 1 / span 2;
-
-    }
-    .header-button{
-        margin-right: 30%;
-    }
+        .logo-mobileW{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+    .button-nav{
+            display: none;
+        }  
+        
     .main-grid {
         grid-template-columns: repeat(4,1fr);
-        /* padding: 5% 5%;  */
+        padding: 4% 4%; 
     }   
-    .cs-head{
-        font-size: 3rem;
-    }
-    .CS-left {
-        grid-area: 2 / 1 / span 4 / span 4;
-
-    }
-    .CS-right {
-        grid-area: 2 / 7 / span 4 / span 4;
-
-    }
-    .cs-btn{
-    
-        margin-left: 8%;
-        margin-right: 8%;
+    .header-button{
+        grid-area: 3 / 1 / span 1 / span 4;
+        padding: 1% 4% 1% 4%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
     }
     h1 {
         font-size: 2.2rem; 
+ 
+     }
+     h3 {
+        font-size: 1.1rem;
     }
-     
-    h2 {
-     font-size: 2rem;
+
+
+
+}
+
+@media only screen and (min-device-width:721px) and (max-device-width: 1200px) {
+    .main-grid {
+        grid-template-columns: repeat(4,1fr);
+        padding: 4% 4%; 
+    }   
+    .header-button{
+        grid-area: 3 / 2 / span 1 / span 2;
+        padding: 1% 4% 1% 4%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
     }
-     
-    h3 {
-     font-size: 1.1rem;
-    }
-     
-    h4 {
-        font-size: 2.2rem;
-    }
-     
-    h5 {
-        font-size: 1.6rem;
-    }
+
+
 }

@@ -408,12 +408,12 @@ footer .link {
      }
     .main-grid {
         grid-template-columns: repeat(4,1fr);
-        padding: 4% 4%; 
+        margin: 4% 4%; 
     } 
 
     .panel-grid {
         grid-template-columns: repeat(4,1fr);
-        padding: 4% 4%; 
+        margin: 4% 4%; 
     } 
     .aboutHead{
         grid-area: 1 / 1 / span 1 / span 4;
@@ -427,7 +427,7 @@ footer .link {
     }
     .par-1{
         grid-area: 3 / 1 / span 1 / span 4;
-        /* padding-right: 1rem; */
+        
     
     }
     .par-2{
@@ -463,6 +463,9 @@ footer .link {
     .skills3p{
         grid-area: 6 / 1 / span 1 / span 4;
         padding: 0.5rem;
+    }
+    .tools{
+        margin: 4% 8%;
     }
 
     nav {
