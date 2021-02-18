@@ -106,10 +106,11 @@ body {
     background-color: var(--secondary);
     font-family: var(--font-body);
     color:white;
-    padding: 10% 2%;
+    padding: 1% 8%;
     text-align: center;
     border: none;
     border-radius: 15px;
+    /* max-height: 2rem; */
     
     
 }
@@ -140,6 +141,8 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -366,6 +369,44 @@ nav .toplogoW {
     margin-bottom: 1rem;
     text-align: center;
 }
+
+/* contact box */
+.contact-container{
+    background-color: var(--primary);
+    width: 100vw;
+}
+
+/* .details{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 10%;
+    padding-bottom: 0.5rem;
+} */
+
+.contact{
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.contact-body{
+    /* color: var(--secondary); */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    margin: 0 10%;
+}
+.contact-button{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    max-height: 3rem;
+}
+
+
 /* footer */
 footer {
     width: 100%;
